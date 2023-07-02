@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at Uniciclo.v(9): object "PC" differs only in case from object "pc" in the same scope File: /home/leorb/UnB/5º_semestre/OAC/Lab/Lab3/Uniciclo_RV32Red_restored/Uniciclo.v Line: 9
+Warning (10268): Verilog HDL information at Registers.v(44): always construct contains both blocking and non-blocking assignments File: /home/leorb/UnB/5º_semestre/OAC/Lab/Lab3/Uniciclo_RV32Red_restored/Registers.v Line: 44

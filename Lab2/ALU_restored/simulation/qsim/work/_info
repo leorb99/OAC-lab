@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.02, Feb  2 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/leorb/UnB/5º_semestre/OAC/Lab/Lab2/ALU_restored/simulation/qsim
+vALU
+Z1 !s110 1686750887
+!i10b 1
+!s100 _[QTYM@jTLn8Rgz?eU@^Y0
+IFCl;Akkdd5KW[[mC^VGHM1
+R0
+w1686750752
+8ALU.vo
+FALU.vo
+!i122 14
+L0 32 156148
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OV;L;2021.1;73
+r1
+!s85 0
+31
+!s108 1686750885.000000
+!s107 ALU.vo|
+!s90 -work|work|ALU.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@a@l@u
+vALU_vlg_vec_tst
+R1
+!i10b 1
+!s100 YZnoA_]d3Z9F^5o[7TL@]1
+Io3G[;LGTKjZW3LlM<Pbbm3
+R0
+w1686750877
+8ALU.vwf.vt
+FALU.vwf.vt
+!i122 15
+L0 30 380
+R2
+R3
+r1
+!s85 0
+31
+!s108 1686750887.000000
+!s107 ALU.vwf.vt|
+!s90 -work|work|ALU.vwf.vt|
+!i113 1
+R4
+R5
+n@a@l@u_vlg_vec_tst

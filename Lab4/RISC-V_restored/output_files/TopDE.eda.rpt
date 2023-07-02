@@ -1,0 +1,157 @@
+EDA Netlist Writer report for TopDE
+Sat Jul  1 09:49:32 2023
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Sat Jul  1 09:49:32 2023 ;
+; Revision Name             ; TopDE                                 ;
+; Top-level Entity Name     ; TopDE                                 ;
+; Family                    ; Cyclone V                             ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                             ;
++---------------------------------------------------------------------------------------------------+-----------------------------+
+; Option                                                                                            ; Setting                     ;
++---------------------------------------------------------------------------------------------------+-----------------------------+
+; Tool Name                                                                                         ; Questa Intel FPGA (Verilog) ;
+; Generate functional simulation netlist                                                            ; On                          ;
+; Truncate long hierarchy paths                                                                     ; Off                         ;
+; Map illegal HDL characters                                                                        ; Off                         ;
+; Flatten buses into individual nodes                                                               ; Off                         ;
+; Maintain hierarchy                                                                                ; Off                         ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                         ;
+; Enable glitch filtering                                                                           ; Off                         ;
+; Do not write top level VHDL entity                                                                ; Off                         ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                         ;
+; Architecture name in VHDL output netlist                                                          ; structure                   ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                         ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                         ;
++---------------------------------------------------------------------------------------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                          ;
++-------------------------------------------------------------------------------------+
+; Generated Files                                                                     ;
++-------------------------------------------------------------------------------------+
+; /home/leorb/UnB/5º_semestre/OAC/Lab/Lab4/RISC-V_restored/simulation/qsim//TopDE.vo ;
++-------------------------------------------------------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Copyright (C) 2021  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Sat Jul  1 09:49:26 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/leorb/UnB/5º_semestre/OAC/Lab/Lab4/RISC-V_restored/simulation/qsim/ RISC-V -c TopDE
+Warning (20013): Ignored 16 assignments for entity "add_sub" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity add_sub -sip CPU/FPULA/add_sub.sip -library lib_add_sub was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity add_sub -sip CPU/FPULA/add_sub.sip -library lib_add_sub was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity add_sub -sip CPU/FPULA/add_sub.sip -library lib_add_sub was ignored
+Warning (20013): Ignored 65 assignments for entity "add_sub_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "cvt_s_w" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity cvt_s_w -sip CPU/FPULA/cvt_s_w.sip -library lib_cvt_s_w was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity cvt_s_w -sip CPU/FPULA/cvt_s_w.sip -library lib_cvt_s_w was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity cvt_s_w -sip CPU/FPULA/cvt_s_w.sip -library lib_cvt_s_w was ignored
+Warning (20013): Ignored 65 assignments for entity "cvt_s_w_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "cvt_s_wu" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity cvt_s_wu -sip CPU/FPULA/cvt_s_wu.sip -library lib_cvt_s_wu was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity cvt_s_wu -sip CPU/FPULA/cvt_s_wu.sip -library lib_cvt_s_wu was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity cvt_s_wu -sip CPU/FPULA/cvt_s_wu.sip -library lib_cvt_s_wu was ignored
+Warning (20013): Ignored 65 assignments for entity "cvt_s_wu_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "cvt_w_s" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity cvt_w_s -sip CPU/FPULA/cvt_w_s.sip -library lib_cvt_w_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity cvt_w_s -sip CPU/FPULA/cvt_w_s.sip -library lib_cvt_w_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity cvt_w_s -sip CPU/FPULA/cvt_w_s.sip -library lib_cvt_w_s was ignored
+Warning (20013): Ignored 65 assignments for entity "cvt_w_s_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "cvt_wu_s" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity cvt_wu_s -sip CPU/FPULA/cvt_wu_s.sip -library lib_cvt_wu_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity cvt_wu_s -sip CPU/FPULA/cvt_wu_s.sip -library lib_cvt_wu_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity cvt_wu_s -sip CPU/FPULA/cvt_wu_s.sip -library lib_cvt_wu_s was ignored
+Warning (20013): Ignored 65 assignments for entity "cvt_wu_s_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "div_s" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity div_s -sip CPU/FPULA/div_s.sip -library lib_div_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity div_s -sip CPU/FPULA/div_s.sip -library lib_div_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity div_s -sip CPU/FPULA/div_s.sip -library lib_div_s was ignored
+Warning (20013): Ignored 65 assignments for entity "div_s_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "fmax_s" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity fmax_s -sip CPU/FPULA/fmax_s.sip -library lib_fmax_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity fmax_s -sip CPU/FPULA/fmax_s.sip -library lib_fmax_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity fmax_s -sip CPU/FPULA/fmax_s.sip -library lib_fmax_s was ignored
+Warning (20013): Ignored 65 assignments for entity "fmax_s_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "fmin_s" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity fmin_s -sip CPU/FPULA/fmin_s.sip -library lib_fmin_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity fmin_s -sip CPU/FPULA/fmin_s.sip -library lib_fmin_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity fmin_s -sip CPU/FPULA/fmin_s.sip -library lib_fmin_s was ignored
+Warning (20013): Ignored 65 assignments for entity "fmin_s_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "mul_s" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity mul_s -sip CPU/FPULA/mul_s.sip -library lib_mul_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity mul_s -sip CPU/FPULA/mul_s.sip -library lib_mul_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity mul_s -sip CPU/FPULA/mul_s.sip -library lib_mul_s was ignored
+Warning (20013): Ignored 65 assignments for entity "mul_s_0002" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "sqrt_s" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_fp_functions -entity sqrt_s -sip CPU/FPULA/sqrt_s.sip -library lib_sqrt_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity sqrt_s -sip CPU/FPULA/sqrt_s.sip -library lib_sqrt_s was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity sqrt_s -sip CPU/FPULA/sqrt_s.sip -library lib_sqrt_s was ignored
+Warning (20013): Ignored 65 assignments for entity "sqrt_s_0002" -- entity does not exist in design
+Info (204019): Generated file TopDE.vo in folder "/home/leorb/UnB/5º_semestre/OAC/Lab/Lab4/RISC-V_restored/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 925 megabytes
+    Info: Processing ended: Sat Jul  1 09:49:33 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+

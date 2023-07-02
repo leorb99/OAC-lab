@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/leorb/UnB/5º_semestre/OAC/Lab/Lab3/Uniciclo_RV32Red_restored/simulation/qsim
+vALU
+Z1 !s110 1688204950
+!i10b 1
+!s100 PSSJ]Oc]m[[2@LLH;OzZ@0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA>gBKFK^IfXHF4M]JbnWM0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1688204945
+Z4 8TopDE.vo
+Z5 FTopDE.vo
+!i122 0
+L0 32 4477
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1688204949.000000
+Z7 !s107 TopDE.vo|
+Z8 !s90 -work|work|TopDE.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@a@l@u
+vALU_vlg_vec_tst
+R1
+!i10b 1
+!s100 iGl2BO>JL4mG5`84a^00h2
+R2
+IO:A3]iAZ8i?2lz<V5?WV`3
+R3
+R0
+w1688204943
+8ALU.vwf.vt
+FALU.vwf.vt
+!i122 1
+L0 30 379
+R6
+r1
+!s85 0
+31
+!s108 1688204950.000000
+!s107 ALU.vwf.vt|
+!s90 -work|work|ALU.vwf.vt|
+!i113 1
+R9
+R10
+n@a@l@u_vlg_vec_tst
+vUniciclo
+Z11 !s110 1688310003
+!i10b 1
+!s100 g15c8FIN]GQ]N5eLLLI0C3
+R2
+IDT;=P[_Y]zc2dX_K@D`N61
+R3
+R0
+w1688310001
+R4
+R5
+!i122 38
+L0 32 81955
+R6
+r1
+!s85 0
+31
+!s108 1688310002.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@uniciclo
+vUniciclo_vlg_vec_tst
+R11
+!i10b 1
+!s100 `4j^kk_GT1B:VH6N:V_od1
+R2
+IFi?]>H>WO?C=UXj252YQM3
+R3
+R0
+w1688309996
+8Uniciclo.vwf.vt
+FUniciclo.vwf.vt
+!i122 39
+L0 30 83
+R6
+r1
+!s85 0
+31
+!s108 1688310003.000000
+!s107 Uniciclo.vwf.vt|
+!s90 -work|work|Uniciclo.vwf.vt|
+!i113 1
+R9
+R10
+n@uniciclo_vlg_vec_tst

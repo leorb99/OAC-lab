@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/leorb/UnB/5º_semestre/OAC/Lab/Lab4/RISC-V_restored/simulation/qsim
+vTopDE
+Z1 !s110 1688215777
+!i10b 1
+!s100 7Gf1PCE7]S7mH@1LP=nL83
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ik^:ek@o;^O^9KIWUkGYb33
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1688215772
+8TopDE.vo
+FTopDE.vo
+!i122 2
+L0 32 339097
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1688215773.000000
+!s107 TopDE.vo|
+!s90 -work|work|TopDE.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@top@d@e
+vTopDE_vlg_vec_tst
+R1
+!i10b 1
+!s100 EIdBkGjbT7P<NNAcnVSW_2
+R2
+I8>:de^c:@U3M6JcfHz?N<0
+R3
+R0
+w1688215765
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 3
+L0 30 265
+R4
+r1
+!s85 0
+31
+!s108 1688215777.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6
+n@top@d@e_vlg_vec_tst

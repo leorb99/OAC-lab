@@ -1,0 +1,154 @@
+Restore Archived Project report for FPALU
+Mon May 29 21:04:51 2023
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Mon May 29 21:04:51 2023 ;
+; Revision Name                   ; FPALU                                 ;
+; Top-level Entity Name           ; TopDE                                 ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored '/home/leorb/UnB/5º_semestre/OAC/Lab/Lab2/FPALU.qar' into the '/home/leorb/UnB/5º_semestre/OAC/Lab/Lab2/FPALU_restored/' directory
+Info: Generated report 'FPALU.restore.rpt'
+Info (23030): Evaluation of Tcl script /home/leorb/intelFPGA_lite/21.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 593 megabytes
+    Info: Processing ended: Mon May 29 21:04:51 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++---------------------------------------------------------+
+; Files Restored                                          ;
++---------------------------------------------------------+
+; File Name                                               ;
++---------------------------------------------------------+
+; qar_info.json                                           ;
+; Decoder7.v                                              ;
+; FPALU.qpf                                               ;
+; FPALU.qsf                                               ;
+; FPALU.v                                                 ;
+; FPALU.vwf                                               ;
+; FPALU_tb.v                                              ;
+; Parametros.v                                            ;
+; TopDE.v                                                 ;
+; Waveform2.vwf                                           ;
+; add_sub.cmp                                             ;
+; add_sub.qip                                             ;
+; add_sub.v                                               ;
+; add_sub/add_sub_0002.vhd                                ;
+; add_sub/dspba_library.vhd                               ;
+; add_sub/dspba_library_package.vhd                       ;
+; assignment_defaults.qdf                                 ;
+; comp_s.qip                                              ;
+; comp_s.v                                                ;
+; cvt_s_w.cmp                                             ;
+; cvt_s_w.qip                                             ;
+; cvt_s_w.v                                               ;
+; cvt_s_w/cvt_s_w_0002.vhd                                ;
+; cvt_s_w/dspba_library.vhd                               ;
+; cvt_s_w/dspba_library_package.vhd                       ;
+; cvt_s_wu.cmp                                            ;
+; cvt_s_wu.qip                                            ;
+; cvt_s_wu.v                                              ;
+; cvt_s_wu/cvt_s_wu_0002.vhd                              ;
+; cvt_s_wu/dspba_library.vhd                              ;
+; cvt_s_wu/dspba_library_package.vhd                      ;
+; cvt_w_s.cmp                                             ;
+; cvt_w_s.qip                                             ;
+; cvt_w_s.v                                               ;
+; cvt_w_s/cvt_w_s_0002.vhd                                ;
+; cvt_w_s/dspba_library.vhd                               ;
+; cvt_w_s/dspba_library_package.vhd                       ;
+; cvt_wu_s.cmp                                            ;
+; cvt_wu_s.qip                                            ;
+; cvt_wu_s.v                                              ;
+; cvt_wu_s/cvt_wu_s_0002.vhd                              ;
+; cvt_wu_s/dspba_library.vhd                              ;
+; cvt_wu_s/dspba_library_package.vhd                      ;
+; div_s.cmp                                               ;
+; div_s.qip                                               ;
+; div_s.v                                                 ;
+; div_s/div_s_0002.vhd                                    ;
+; div_s/div_s_0002_memoryC0_uid112_invTables_lutmem.hex   ;
+; div_s/div_s_0002_memoryC0_uid113_invTables_lutmem.hex   ;
+; div_s/div_s_0002_memoryC1_uid116_invTables_lutmem.hex   ;
+; div_s/div_s_0002_memoryC2_uid120_invTables_lutmem.hex   ;
+; div_s/dspba_library.vhd                                 ;
+; div_s/dspba_library_package.vhd                         ;
+; fmax_s.cmp                                              ;
+; fmax_s.qip                                              ;
+; fmax_s.v                                                ;
+; fmax_s/dspba_library.vhd                                ;
+; fmax_s/dspba_library_package.vhd                        ;
+; fmax_s/fmax_s_0002.vhd                                  ;
+; fmin_s.cmp                                              ;
+; fmin_s.qip                                              ;
+; fmin_s.v                                                ;
+; fmin_s/dspba_library.vhd                                ;
+; fmin_s/dspba_library_package.vhd                        ;
+; fmin_s/fmin_s_0002.vhd                                  ;
+; mul_s.cmp                                               ;
+; mul_s.qip                                               ;
+; mul_s.v                                                 ;
+; mul_s/dspba_library.vhd                                 ;
+; mul_s/dspba_library_package.vhd                         ;
+; mul_s/mul_s_0002.vhd                                    ;
+; sqrt_s.cmp                                              ;
+; sqrt_s.qip                                              ;
+; sqrt_s.v                                                ;
+; sqrt_s/dspba_library.vhd                                ;
+; sqrt_s/dspba_library_package.vhd                        ;
+; sqrt_s/sqrt_s_0002.vhd                                  ;
+; sqrt_s/sqrt_s_0002_memoryC0_uid62_sqrtTables_lutmem.hex ;
+; sqrt_s/sqrt_s_0002_memoryC1_uid65_sqrtTables_lutmem.hex ;
+; sqrt_s/sqrt_s_0002_memoryC2_uid68_sqrtTables_lutmem.hex ;
++---------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
