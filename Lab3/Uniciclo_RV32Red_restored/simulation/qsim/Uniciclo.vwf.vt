@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/02/2023 11:59:55"
+// Generated on "07/02/2023 13:44:54"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          Uniciclo
 // 
@@ -108,6 +108,8 @@ end
 initial
 begin
 	reset = 1'b0;
+	reset = #320000 1'b1;
+	reset = #1920000 1'b0;
 end 
 endmodule
 
