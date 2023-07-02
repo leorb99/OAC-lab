@@ -1,5 +1,5 @@
 Assembler report for TopDE
-Sun Jul  2 11:53:43 2023
+Sun Jul  2 14:29:55 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Jul  2 11:53:43 2023 ;
+; Assembler Status      ; Successful - Sun Jul  2 14:29:55 2023 ;
 ; Revision Name         ; TopDE                                 ;
 ; Top-level Entity Name ; Uniciclo                              ;
 ; Family                ; Cyclone V                             ;
@@ -64,13 +64,13 @@ https://fpgasoftware.intel.com/eula.
 +--------+------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                  ;
-+--------------------------------------------------------------------------------------------+
-; File Name                                                                                  ;
-+--------------------------------------------------------------------------------------------+
-; /home/leorb/UnB/5º_semestre/OAC/Lab/Lab3/Uniciclo_RV32Red_restored/output_files/TopDE.sof ;
-+--------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                      ;
++------------------------------------------------------------------------------------------------+
+; File Name                                                                                      ;
++------------------------------------------------------------------------------------------------+
+; /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/output_files/TopDE.sof ;
++------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------+
@@ -78,8 +78,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+--------------------+
 ; Option         ; Setting            ;
 +----------------+--------------------+
-; JTAG usercode  ; 0x010A80AB         ;
-; Checksum       ; 0x010A80AB         ;
+; JTAG usercode  ; 0x010A7FAF         ;
+; Checksum       ; 0x010A7FAF         ;
 +----------------+--------------------+
 
 
@@ -89,14 +89,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sun Jul  2 11:53:28 2023
+    Info: Processing started: Sun Jul  2 14:29:41 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off TopDE -c TopDE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 534 megabytes
-    Info: Processing ended: Sun Jul  2 11:53:43 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 530 megabytes
+    Info: Processing ended: Sun Jul  2 14:29:55 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
 
 

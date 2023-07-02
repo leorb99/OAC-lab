@@ -43,7 +43,7 @@ fim:
 	add s1, s1, t3
 
 	sw t2, 8(gp)
-	
+	lw t6, 8(gp)	
 exit:	jal exit
 
 
