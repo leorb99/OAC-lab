@@ -16,7 +16,42 @@ module Uniciclo (
 		
 
 // Aqui vai o seu código do processador
+wire 			 wCBranch;
+wire			 wCMemRead;
+wire  		 wCMemtoReg;
+wire [1:0]	 wCALUOp;
+wire			 wCMemWrite; 
+wire			 wCALUSrc;
+wire			 wCRegWrite; 
+wire			 wCJal;
+wire			 wCze	ro;
 
+wire [31:0]	 wCreg1;
+wire [31:0]  wCreg2;
+wire [31:0]  wCregdata;
+
+wire [31:0]  wCiULA2;
+wire [31:0]  wCImm;
+wire [31:0]  wCsaidaULA;
+wire [3:0]   wCALUContr;
+wire 			 wCPCfonte;
+wire [31:0] wPC4;
+wire [31:0] wBranchPC;
+
+
+//wPC4 <= PC + mais4PC;
+//wBranchPC <= PC + wCImm;
+
+wire [31:0] mais4PC;
+wire [31:0] wiPC;
+wire [31:0]  wCsaidaMEM;
+Memoria MemInstr(
+	.address(wCIouD),
+	.data(wCRegB),
+	.clock(clock2),
+	.wren(wCMemWrite),
+	.q(wCsaidaMEM)
+);
 
 
 
