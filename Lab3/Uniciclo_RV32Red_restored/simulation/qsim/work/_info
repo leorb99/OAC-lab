@@ -57,24 +57,72 @@ r1
 R9
 R10
 n@a@l@u_vlg_vec_tst
+vImmGen
+Z11 !s110 1688384173
+!i10b 1
+!s100 ZOEN;PHW?QJ<3POH3TUK32
+R2
+IZKz@0UT50GNkSdc?fEK9X1
+R3
+Z12 d/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/simulation/qsim
+w1688384172
+R4
+R5
+!i122 56
+L0 32 1738
+R6
+r1
+!s85 0
+31
+Z13 !s108 1688384173.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@imm@gen
+vImmGen_vlg_vec_tst
+R11
+!i10b 1
+!s100 Ki5jSA1_4A?fmB6f78=NZ2
+R2
+IA>@^ZFPX>k^^efE[;PkJZ1
+R3
+R12
+w1688384170
+8ImmGen.vwf.vt
+FImmGen.vwf.vt
+!i122 57
+L0 30 236
+R6
+r1
+!s85 0
+31
+R13
+!s107 ImmGen.vwf.vt|
+!s90 -work|work|ImmGen.vwf.vt|
+!i113 1
+R9
+R10
+n@imm@gen_vlg_vec_tst
 vUniciclo
-Z11 !s110 1688319039
+Z14 !s110 1688334709
 !i10b 1
 !s100 DVdf7BlOFDOHd02J>QaYZ2
 R2
 IfL75VC<Z`biZ;d5nEionH2
 R3
-Z12 d/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/simulation/qsim
-w1688319037
+R12
+w1688334704
 R4
 R5
-!i122 50
+!i122 52
 L0 32 81955
 R6
 r1
 !s85 0
 31
-!s108 1688319038.000000
+!s108 1688334708.000000
 R7
 R8
 !i113 1
@@ -82,23 +130,23 @@ R9
 R10
 n@uniciclo
 vUniciclo_vlg_vec_tst
-R11
+R14
 !i10b 1
 !s100 Ui<f>mIibEYLhHJMGo7Ph0
 R2
 I1DCzzM^QFFz`PfP>KlZ;P0
 R3
 R12
-w1688319033
+w1688334700
 8Uniciclo.vwf.vt
 FUniciclo.vwf.vt
-!i122 51
+!i122 53
 L0 30 85
 R6
 r1
 !s85 0
 31
-!s108 1688319039.000000
+!s108 1688334709.000000
 !s107 Uniciclo.vwf.vt|
 !s90 -work|work|Uniciclo.vwf.vt|
 !i113 1
