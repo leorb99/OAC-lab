@@ -6,9 +6,10 @@ module Controle (
 	input wire iCLK, iRST,
 	input wire [6:0] iOpCode,
 	output reg [1:0] oMem2Reg, oOrigAULA, oOrigBULA, oALUOp,
-	output reg oOrigPC, oEscrevePCB, oEscreveReg, oEscreveIR, oLeMem, oEscreveMem, oIouD, oEscrevePC, oEscrevePCCond
+	output reg oOrigPC, oEscrevePCB, oEscreveReg, oEscreveIR, oLeMem, oEscreveMem, oIouD, oEscrevePC, oEscrevePCCond,
+	output reg [3:0] estado
 );
-reg [3:0] estado;
+
 parameter inicio 				= 4'b0000,
 			 decod 				= 4'b0001,
 			 load_store 		= 4'b0010,
@@ -18,7 +19,11 @@ parameter inicio 				= 4'b0000,
 			 tipo_r 				= 4'b0110,
 			 conclusao_tipo_r = 4'b0111,
 			 beq 					= 4'b1000,
-			 jal 					= 4'b1001;
+			 jal 					= 4'b1001,
+			 ///////////////////////////
+			 ini_dec				= 4'b1010,
+			 load_inter			= 4'b1011,
+			 store_inter		= 4'b1100;
 
 initial 
 	begin
@@ -33,9 +38,9 @@ always @(posedge iCLK, posedge iRST)
 			begin
 				case(estado)
 					inicio:
-						begin
-							estado <= decod;
-						end
+						estado <= ini_dec;
+					ini_dec:
+						estado <= decod;
 					decod:
 						begin
 							case(iOpCode)
@@ -59,17 +64,15 @@ always @(posedge iCLK, posedge iRST)
 							endcase	
 						end
 					load:
-						begin
+						estado <= load_inter;
+					load_inter:
 							estado <= conclusao_lw;
-						end
+					store:
+						estado <= store_inter;
 					tipo_r:
-						begin
 							estado <= conclusao_tipo_r;
-						end
 					default:
-						begin
 							estado <= inicio;
-						end
 			endcase
 		end
 	end
@@ -78,6 +81,22 @@ always @(estado)
 	begin
 		case(estado)
 			inicio:
+				begin
+					oMem2Reg 		= 2'b00;
+					oOrigAULA 		= 2'b10;
+					oOrigBULA 		= 2'b01;
+					oALUOp 			= 2'b00;
+					oOrigPC 			= OFF;
+					oEscrevePCB 	= ON;
+					oEscreveReg 	= OFF;
+					oEscreveIR 		= ON;
+					oLeMem 			= ON;
+					oEscreveMem 	= OFF;
+					oIouD 			= OFF;
+					oEscrevePC 		= ON;
+					oEscrevePCCond = OFF;
+				end
+			ini_dec:
 				begin
 					oMem2Reg 		= 2'b00;
 					oOrigAULA 		= 2'b10;
@@ -140,6 +159,22 @@ always @(estado)
 					oIouD 			= ON;
 					oEscrevePC 		= OFF;
 					oEscrevePCCond = OFF;
+				end
+			load_inter:
+				begin
+					oMem2Reg 		= 2'b00;
+					oOrigAULA 		= 2'b00;
+					oOrigBULA 		= 2'b00;
+					oALUOp 			= 2'b00;
+					oOrigPC 			= OFF;
+					oEscrevePCB 	= OFF;
+					oEscreveReg 	= OFF;
+					oEscreveIR 		= OFF;
+					oLeMem 			= ON;
+					oEscreveMem 	= OFF;
+					oIouD 			= ON;
+					oEscrevePC 		= OFF;
+					oEscrevePCCond = OFF;
 				end			
 			conclusao_lw:
 				begin
@@ -158,6 +193,22 @@ always @(estado)
 					oEscrevePCCond = OFF;
 				end			
 			store:
+				begin
+					oMem2Reg 		= 2'b00;
+					oOrigAULA 		= 2'b00;
+					oOrigBULA 		= 2'b00;
+					oALUOp 			= 2'b00;
+					oOrigPC 			= OFF;
+					oEscrevePCB 	= OFF;
+					oEscreveReg 	= OFF;
+					oEscreveIR 		= OFF;
+					oLeMem 			= OFF;
+					oEscreveMem 	= ON;
+					oIouD 			= ON;
+					oEscrevePC 		= OFF;
+					oEscrevePCCond = OFF;
+				end	
+			store_inter:
 				begin
 					oMem2Reg 		= 2'b00;
 					oOrigAULA 		= 2'b00;

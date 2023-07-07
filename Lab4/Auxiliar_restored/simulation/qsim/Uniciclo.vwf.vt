@@ -19,117 +19,97 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/07/2023 15:16:34"
+// Generated on "07/07/2023 17:11:54"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          Controle
+// Verilog Test Bench (with test vectors) for design :                          Uniciclo
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module Controle_vlg_vec_tst();
+module Uniciclo_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg iCLK;
-reg [6:0] iOpCode;
-reg iRST;
+reg clock;
+reg clock2;
+reg [4:0] regin;
+reg reset;
 // wires                                               
-wire [3:0] estado;
-wire [1:0] oALUOp;
-wire oEscreveIR;
-wire oEscreveMem;
-wire oEscrevePC;
-wire oEscrevePCB;
-wire oEscrevePCCond;
-wire oEscreveReg;
-wire oIouD;
-wire oLeMem;
-wire [1:0] oMem2Reg;
-wire [1:0] oOrigAULA;
-wire [1:0] oOrigBULA;
-wire oOrigPC;
+wire [31:0] Instr;
+wire [31:0] PC;
+wire [3:0] regEstados;
+wire [31:0] regout;
+wire [31:0] regs0;
+wire [31:0] regs1;
+wire [31:0] regt0;
+wire [31:0] regt2;
 
 // assign statements (if any)                          
-Controle i1 (
+Uniciclo i1 (
 // port map - connection between master ports and signals/registers   
-	.estado(estado),
-	.iCLK(iCLK),
-	.iOpCode(iOpCode),
-	.iRST(iRST),
-	.oALUOp(oALUOp),
-	.oEscreveIR(oEscreveIR),
-	.oEscreveMem(oEscreveMem),
-	.oEscrevePC(oEscrevePC),
-	.oEscrevePCB(oEscrevePCB),
-	.oEscrevePCCond(oEscrevePCCond),
-	.oEscreveReg(oEscreveReg),
-	.oIouD(oIouD),
-	.oLeMem(oLeMem),
-	.oMem2Reg(oMem2Reg),
-	.oOrigAULA(oOrigAULA),
-	.oOrigBULA(oOrigBULA),
-	.oOrigPC(oOrigPC)
+	.Instr(Instr),
+	.PC(PC),
+	.clock(clock),
+	.clock2(clock2),
+	.regEstados(regEstados),
+	.regin(regin),
+	.regout(regout),
+	.regs0(regs0),
+	.regs1(regs1),
+	.regt0(regt0),
+	.regt2(regt2),
+	.reset(reset)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// iCLK
+// clock
 always
 begin
-	iCLK = 1'b0;
-	iCLK = #20000 1'b1;
+	clock = 1'b0;
+	clock = #20000 1'b1;
 	#20000;
 end 
-// iOpCode[ 6 ]
-initial
+
+// clock2
+always
 begin
-	iOpCode[6] = 1'b0;
+	clock2 = 1'b0;
+	clock2 = #10000 1'b1;
+	#10000;
 end 
-// iOpCode[ 5 ]
+// regin[ 4 ]
 initial
 begin
-	iOpCode[5] = 1'b0;
-	iOpCode[5] = #120000 1'b1;
-	iOpCode[5] = #90000 1'b0;
+	regin[4] = 1'b0;
 end 
-// iOpCode[ 4 ]
+// regin[ 3 ]
 initial
 begin
-	iOpCode[4] = 1'b0;
-	iOpCode[4] = #170000 1'b1;
-	iOpCode[4] = #40000 1'b0;
+	regin[3] = 1'b0;
 end 
-// iOpCode[ 3 ]
+// regin[ 2 ]
 initial
 begin
-	iOpCode[3] = 1'b0;
+	regin[2] = 1'b0;
 end 
-// iOpCode[ 2 ]
+// regin[ 1 ]
 initial
 begin
-	iOpCode[2] = 1'b0;
+	regin[1] = 1'b0;
 end 
-// iOpCode[ 1 ]
+// regin[ 0 ]
 initial
 begin
-	iOpCode[1] = 1'b0;
-	iOpCode[1] = #30000 1'b1;
-	iOpCode[1] = #180000 1'b0;
-end 
-// iOpCode[ 0 ]
-initial
-begin
-	iOpCode[0] = 1'b0;
-	iOpCode[0] = #30000 1'b1;
-	iOpCode[0] = #180000 1'b0;
+	regin[0] = 1'b0;
 end 
 
-// iRST
+// reset
 initial
 begin
-	iRST = 1'b0;
+	reset = 1'b0;
 end 
 endmodule
 

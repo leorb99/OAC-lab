@@ -99,7 +99,7 @@ module Memoria (
 		altsyncram_component.read_during_write_mode_port_a = "DONT_CARE",
 		altsyncram_component.widthad_a = 11,
 		altsyncram_component.width_a = 32,
-		altsyncram_component.width_byteena_a = 4;
+		altsyncram_component.width_byteena_a = 1;
 
 
 endmodule

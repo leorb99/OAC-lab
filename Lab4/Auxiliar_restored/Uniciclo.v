@@ -11,7 +11,8 @@ module Uniciclo (
 	input wire[4:0] regin,
 	output reg [31:0] regout,
 	///////////////////////////////////
-	output wire [31:0] regt0, regt2, regs0, regs1
+	output wire [31:0] regt0, regt2, regs0, regs1,
+	output reg [3:0] regEstados
 	///////////////////////////////////
 		
 	);
@@ -78,13 +79,6 @@ wire [3:0]   wCControleULA;
 wire [9:0]   wCFunct10;
 assign wCFunct10 = {{regInstr[31:25]}, {regInstr[14:12]}};
 ////////////////////////////////////////
-/*
-wire [31:0]  regInstr;
-wire [31:0]  regDados;
-wire [31:0]  regA;
-wire [31:0]  regB;
-wire [31:0]  regPCB;
-wire [31:0]  regSaidaULA;*/
 
 reg [31:0] regInstr, regDados, regPCB, regA, regB, regSaidaULA;
 
@@ -101,16 +95,17 @@ always @(posedge clock or posedge reset)
 			end
 		else
 			begin
+				regDados 	<= wCSaiMem;
+				regA 			<= wCDadoA;
+				regB 			<= wCDadoB;
+				regSaidaULA <= wCResultadoULA;
 				if(wCEscreveIR)
 					regInstr    <= wCSaiMem;
 				if(wCEscrevePCB)
 					regPCB      <= wCSaiPC;
-					regDados 	<= wCSaiMem;
-					regA 			<= wCDadoA;
-					regB 			<= wCDadoB;
-					regSaidaULA <= wCResultadoULA;
-			end
+			end		
 	end
+
 
 Controle ctrl(
 	.iCLK(clock),
@@ -128,7 +123,8 @@ Controle ctrl(
 	.oEscreveMem(wCEscreveMem),
 	.oIouD(wCIouD),
 	.oEscrevePC(wCEscrevePC),
-	.oEscrevePCCond(wCEscrevePCCond)
+	.oEscrevePCCond(wCEscrevePCCond),
+	.estado(regEstados)
 );
 
 Pc ProgramCounter(

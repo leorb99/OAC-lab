@@ -2,7 +2,9 @@ module TopDE (
 	input wire CLOCK_50,
 	input wire [9:0] SW,
 	input wire [3:0] KEY,
-	output wire [7:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5
+	output wire [7:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5,
+	inout              HPS_LED,
+	output      [9:0]  LEDR
 	);
 	
 	
@@ -12,8 +14,9 @@ module TopDE (
 	
 	wire [31:0] regout, pc, instr;
 	reg [31:0] in;
+	reg [3:0] estados;
 	
-	Uniciclo UNI1 (.clock(clock), .reset(~KEY[0]), .PC(pc), .Instr(instr),.regin(SW[9:5]), .regout(regout));
+	Uniciclo UNI1 (.clock(clock), .reset(~KEY[0]), .PC(pc), .Instr(instr),.regin(SW[9:5]), .regout(regout), .regEstados(estados));
 	
 	always @(*)
 		begin
@@ -34,7 +37,7 @@ module TopDE (
 	decoder7 D3 (.In(in[15:12]),.Out(HEX3));
 	decoder7 D4 (.In(in[19:16]),.Out(HEX4));
 	decoder7 D5 (.In(in[23:20]),.Out(HEX5));
-	
+	assign LEDR[3:0] = estados;
 endmodule
 	
 	
