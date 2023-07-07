@@ -112,6 +112,25 @@ always @(posedge clock or posedge reset)
 			end
 	end
 
+Controle ctrl(
+	.iCLK(clock),
+	.iRST(reset),
+	.iOpCode(wCOpcode),
+	.oMem2Reg(wCMemtoReg),
+	.oOrigAULA(wCOrigAULA),
+	.oOrigBULA(wCOrigBULA),
+	.oOrigPC(wCOrigPC),
+	.oALUOp(wCALUOp),
+	.oEscrevePCB(wCEscrevePCB),
+	.oEscreveReg(wCEscreveReg),
+	.oEscreveIR(wCEscreveIR),
+	.oLeMem(wCLeMem),
+	.oEscreveMem(wCEscreveMem),
+	.oIouD(wCIouD),
+	.oEscrevePC(wCEscrevePC),
+	.oEscrevePCCond(wCEscrevePCCond)
+);
+
 Pc ProgramCounter(
 	.clk(clock),
 	.rst(reset),
@@ -184,7 +203,7 @@ always @(*)
 		2'b10:
 			wCEntraAULA <= wCSaiPC;
 		default:
-			wCEntraAULA <= 32'b0;
+			wCEntraAULA <= 32'h00000000;
 	endcase
 
 always @(*)
@@ -192,15 +211,15 @@ always @(*)
 		2'b00:
 			wCEntraBULA <= regB;
 		2'b01:
-			wCEntraBULA <= 32'b1;
+			wCEntraBULA <= 32'h00000001;
 		2'b10:
 			wCEntraBULA <= wCSaiImm;
 		default:
-			wCEntraBULA <= 32'b0;
+			wCEntraBULA <= 32'h00000000;
 	endcase
 
 ALUControl ControleULA(
-	.Funct10(wCFunct),
+	.Funct10(wCFunct10),
 	.ALUOp(wCALUOp),
 	.ALUCtrl(wCControleULA)
 );
