@@ -19,6 +19,8 @@ always @(posedge clk or posedge rst)
 		if(rst)
 			PC <= 32'h0040_0000;
 		else
-			PC <= PCNext;
+			if(EscrevePC)
+				PC <= PCNext;
+
 	end
 endmodule

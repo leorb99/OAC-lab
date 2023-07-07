@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at Registers.v(45): always construct contains both blocking and non-blocking assignments File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Registers.v Line: 45
