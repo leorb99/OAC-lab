@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/simulation/qsim
+vControle
+Z1 !s110 1688748593
+!i10b 1
+!s100 Wk<@?Oj32hnCFY3gEE:Wn2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I01DmaIG_<V:caRdmDRMT32
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1688748589
+8TopDE.vo
+FTopDE.vo
+!i122 2
+L0 32 1318
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1688748593.000000
+!s107 TopDE.vo|
+!s90 -work|work|TopDE.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@controle
+vControle_vlg_vec_tst
+R1
+!i10b 1
+!s100 d:Kj3bMV7e@dlP1Y3Jag=1
+R2
+IbH=SEYi7O4@m7:GJZfBPU1
+R3
+R0
+w1688748587
+8Controle.vwf.vt
+FControle.vwf.vt
+!i122 3
+L0 30 99
+R4
+r1
+!s85 0
+31
+R5
+!s107 Controle.vwf.vt|
+!s90 -work|work|Controle.vwf.vt|
+!i113 1
+R6
+R7
+n@controle_vlg_vec_tst

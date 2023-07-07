@@ -1,0 +1,13 @@
+
+State Machine - |Controle|estado
+Name estado.jal estado.beq estado.conclusao_tipo_r estado.tipo_r estado.store estado.conclusao_lw estado.load estado.load_store estado.decod estado.inicio 
+estado.inicio 0 0 0 0 0 0 0 0 0 0 
+estado.decod 0 0 0 0 0 0 0 0 1 1 
+estado.load_store 0 0 0 0 0 0 0 1 0 1 
+estado.load 0 0 0 0 0 0 1 0 0 1 
+estado.conclusao_lw 0 0 0 0 0 1 0 0 0 1 
+estado.store 0 0 0 0 1 0 0 0 0 1 
+estado.tipo_r 0 0 0 1 0 0 0 0 0 1 
+estado.conclusao_tipo_r 0 0 1 0 0 0 0 0 0 1 
+estado.beq 0 1 0 0 0 0 0 0 0 1 
+estado.jal 1 0 0 0 0 0 0 0 0 1 

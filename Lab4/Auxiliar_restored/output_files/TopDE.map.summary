@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Jul  6 23:00:18 2023
+Analysis & Synthesis Status : Successful - Fri Jul  7 13:40:57 2023
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : TopDE
-Top-level Entity Name : TopDE
+Top-level Entity Name : Controle
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 153
-Total pins : 63
+Total registers : 10
+Total pins : 26
 Total virtual pins : 0
-Total block memory bits : 65,536
+Total block memory bits : 0
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

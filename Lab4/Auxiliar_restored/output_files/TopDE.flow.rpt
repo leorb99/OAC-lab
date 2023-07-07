@@ -1,5 +1,5 @@
 Flow report for TopDE
-Thu Jul  6 23:01:50 2023
+Fri Jul  7 13:49:49 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Jul  6 23:01:40 2023       ;
+; Flow Status                     ; Successful - Fri Jul  7 13:49:49 2023       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; TopDE                                       ;
-; Top-level Entity Name           ; TopDE                                       ;
+; Top-level Entity Name           ; Controle                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 106 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 155                                         ;
-; Total pins                      ; 63 / 457 ( 14 % )                           ;
+; Logic utilization (in ALMs)     ; 16 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 11                                          ;
+; Total pins                      ; 26 / 457 ( 6 % )                            ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 65,536 / 4,065,280 ( 2 % )                  ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/06/2023 22:59:49 ;
+; Start date & time ; 07/07/2023 13:40:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TopDE               ;
 +-------------------+---------------------+
@@ -79,15 +79,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 220998220338899.168869518946879        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 220998220338899.168874804159952        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Controle    ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Controle    ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Controle    ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; Controle                               ; TopDE         ; --          ; --         ;
 ; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                     ; Verilog_2001  ; --          ; --         ;
 ; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                    ; --            ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
@@ -98,11 +99,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 524 MB              ; 00:00:57                           ;
-; Fitter               ; 00:01:07     ; 1.0                     ; 1655 MB             ; 00:01:48                           ;
-; Assembler            ; 00:00:10     ; 1.0                     ; 517 MB              ; 00:00:10                           ;
-; Timing Analyzer      ; 00:00:09     ; 1.1                     ; 848 MB              ; 00:00:09                           ;
-; Total                ; 00:01:54     ; --                      ; --                  ; 00:03:04                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 439 MB              ; 00:00:32                           ;
+; Fitter               ; 00:01:22     ; 1.0                     ; 1590 MB             ; 00:02:03                           ;
+; Assembler            ; 00:00:11     ; 1.0                     ; 520 MB              ; 00:00:10                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.0                     ; 810 MB              ; 00:00:08                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 688 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 692 MB              ; 00:00:01                           ;
+; Total                ; 00:02:00     ; --                      ; --                  ; 00:02:55                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,6 +118,8 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; ideapad          ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
 ; Assembler            ; ideapad          ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
 ; Timing Analyzer      ; ideapad          ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; ideapad          ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; ideapad          ; Ubuntu 22.04.2 ; 22         ; x86_64         ;
 +----------------------+------------------+----------------+------------+----------------+
 
 
@@ -125,6 +130,8 @@ quartus_map --read_settings_files=on --write_settings_files=off TopDE -c TopDE
 quartus_fit --read_settings_files=off --write_settings_files=off TopDE -c TopDE
 quartus_asm --read_settings_files=off --write_settings_files=off TopDE -c TopDE
 quartus_sta TopDE -c TopDE
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TopDE -c TopDE --vector_source=/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Controle.vwf --testbench_file=/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/simulation/qsim/Controle.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/simulation/qsim/ TopDE -c TopDE
 
 
 
