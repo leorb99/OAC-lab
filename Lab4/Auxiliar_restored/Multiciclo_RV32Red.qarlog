@@ -1,0 +1,35 @@
+Quartus Prime Archive log --	/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Multiciclo_RV32Red.qarlog
+
+Archive:	/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Multiciclo_RV32Red.qar
+Date:		Sat Jul  8 20:24:55 2023
+Quartus Prime		21.1.0 Build 842 10/21/2021 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/ALU.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/ALU.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/ALUControl.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/ALUControl.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Controle.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Controle.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/ImmGen.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/ImmGen.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Memoria.qip
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Memoria.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Parametros.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Pc.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Registers.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Registers.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/TopDE.qpf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/TopDE.qsf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/TopDE.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/TopDE_assignment_defaults.qdf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Uniciclo.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/Uniciclo.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/de1_data.mif
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/de1_text.mif
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/decoder7.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab4/Auxiliar_restored/fdiv.v
+	======= Total: 24 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

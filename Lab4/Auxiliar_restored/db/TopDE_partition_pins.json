@@ -72,11 +72,35 @@
 					"strict" : false
 				},
 				{
+					"name" : "estado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "estado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "estado[3]",
+					"strict" : false
+				},
+				{
 					"name" : "iOpCode[3]",
 					"strict" : false
 				},
 				{
 					"name" : "iOpCode[4]",
+					"strict" : false
+				},
+				{
+					"name" : "iOpCode[6]",
+					"strict" : false
+				},
+				{
+					"name" : "iOpCode[5]",
 					"strict" : false
 				},
 				{
@@ -89,14 +113,6 @@
 				},
 				{
 					"name" : "iOpCode[2]",
-					"strict" : false
-				},
-				{
-					"name" : "iOpCode[6]",
-					"strict" : false
-				},
-				{
-					"name" : "iOpCode[5]",
 					"strict" : false
 				},
 				{
