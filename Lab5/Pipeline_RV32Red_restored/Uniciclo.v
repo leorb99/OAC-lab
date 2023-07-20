@@ -11,7 +11,11 @@ module Uniciclo (
 	input wire[4:0] regin,
 	output reg [31:0] regout,
 	///////////////////////////////////
-	output wire [31:0] regt0, regt2, regs0, wCsaidaMEM
+	output wire [31:0] regt0, regt1, regt2, regs0, wCsaidaMEM,
+	output reg [63:0] ifid,			// pc + instrucao
+	output reg [118:0] idex,			// wb + m + ex + A + B + imm + funct10 + rd
+	output reg [73:0] x_men,			// wb + m + ula + B + rd
+	output reg [70:0] memwb 	   // wb + data + ula + rd
 	///////////////////////////////////
 	
 	);
@@ -23,13 +27,6 @@ initial
 	end
 
 // Aqui vai o seu código do processador
-
-
-
-reg [63:0] ifid;			// pc + instrucao
-reg [118:0] idex;			// wb + m + ex + A + B + imm + funct10 + rd
-reg [73:0] x_men;			// wb + m + ula + B + rd
-reg [70:0] memwb; 	   // wb + data + ula + rd
 
 wire 			 wCBranch;
 wire			 wCMemRead;
@@ -50,9 +47,13 @@ wire [31:0]  wCImm;
 wire [31:0]  wCsaidaULA;
 wire [3:0]   wCALUContr;
 
-
 wire 			 wCPCFonte;
 wire 			 wCEqual;
+
+//reg [63:0] ifid;			// pc + instrucao
+//reg [118:0] idex;			// wb + m + ex + A + B + imm + funct10 + rd
+//reg [73:0] x_men;			// wb + m + ula + B + rd
+//reg [70:0] memwb; 	   // wb + data + ula + rd
 
 assign wCPCFonte = wCJal | (wCBranch & wCEqual);
 wire [31:0] wPC4;
@@ -110,6 +111,7 @@ Registers reg0(
 	.Rout(regout),
 	////////////////////////////////////////////////
 	.t0(regt0),
+	.t1(regt1),
 	.t2(regt2),
 	.s0(regs0),
 	.s1(regs1)
@@ -170,7 +172,7 @@ ALU ALU0(
 
 
 ALUControl ALUControl(
-	.Funct10(idex[31:12]),
+	.Funct10(idex[14:5]),
 	.ALUOp(idex[112:111]),
 	.ALUCtrl(wCALUContr)
 );
