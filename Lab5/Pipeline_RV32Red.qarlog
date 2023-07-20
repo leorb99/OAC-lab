@@ -1,6 +1,38 @@
+Quartus Prime Archive log --	/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Pipeline_RV32Red.qarlog
 
+Archive:	/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Pipeline_RV32Red.qar
+Date:		Thu Jul 20 20:11:15 2023
+Quartus Prime		21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
-******* Archived project restoration attempt on Wed Jul 19 17:09:26 2023
-Source archive file:	/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red.qar
-Archive was extracted into	/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/
-		 - successfully.
+	=========== Files Selected: ===========
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/ALU.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/ALU.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/ALUControl.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/ALUControl.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Control.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Control.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/DataRAM.qip
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/DataRAM.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/ImmGen.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/ImmGen.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/InstRAM.qip
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/InstRAM.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Parametros.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Pc.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Registers.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Registers.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/TopDE.qpf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/TopDE.qsf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/TopDE.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/TopDE_assignment_defaults.qdf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.vwf
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/de1_data.mif
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/de1_text.mif
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/decoder7.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/fdiv.v
+/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/output_files/Waveform.vwf
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

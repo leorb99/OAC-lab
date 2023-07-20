@@ -9,15 +9,10 @@ module Uniciclo (
 	output reg [31:0] PC,
 	output reg [31:0] Instr,
 	input wire[4:0] regin,
-	output reg [31:0] regout,
+	output reg [31:0] regout
 	///////////////////////////////////
-	output wire [31:0] regt0, regt1, regt2, regs0, wCsaidaMEM,
-	output reg [63:0] ifid,			// pc + instrucao
-	output reg [118:0] idex,			// wb + m + ex + A + B + imm + funct10 + rd
-	output reg [73:0] x_men,			// wb + m + ula + B + rd
-	output reg [70:0] memwb 	   // wb + data + ula + rd
+	//output wire [31:0] regt0, regt1, regt2, regs0, regs1, regsp, wCsaidaMEM,
 	///////////////////////////////////
-	
 	);
 initial
 	begin
@@ -50,10 +45,10 @@ wire [3:0]   wCALUContr;
 wire 			 wCPCFonte;
 wire 			 wCEqual;
 
-//reg [63:0] ifid;			// pc + instrucao
-//reg [118:0] idex;			// wb + m + ex + A + B + imm + funct10 + rd
-//reg [73:0] x_men;			// wb + m + ula + B + rd
-//reg [70:0] memwb; 	   // wb + data + ula + rd
+reg [63:0] ifid;			// pc + instrucao
+reg [118:0] idex;			// wb + m + ex + A + B + imm + funct10 + rd
+reg [73:0] x_men;			// wb + m + ula + B + rd
+reg [70:0] memwb; 	   // wb + data + ula + rd
 
 assign wCPCFonte = wCJal | (wCBranch & wCEqual);
 wire [31:0] wPC4;
@@ -100,7 +95,7 @@ always @(posedge clock or posedge reset)
 Registers reg0(
 	.CLK(clock), 
 	.RST(reset), 
-	.RegWrite(memwb[70]), 
+	.RegWrite(memwb[69]), 
 	.RS1(ifid[19:15]), 
 	.RS2(ifid[24:20]), 
 	.RD(memwb[4:0]), 
@@ -108,13 +103,14 @@ Registers reg0(
 	.ReadData1(wCreg1), 
 	.ReadData2(wCreg2),
 	.Rin(regin),
-	.Rout(regout),
+	.Rout(regout)
 	////////////////////////////////////////////////
-	.t0(regt0),
-	.t1(regt1),
-	.t2(regt2),
-	.s0(regs0),
-	.s1(regs1)
+	//.t0(regt0),
+	//.t1(regt1),
+	//.t2(regt2),
+	//.s0(regs0),
+	//.s1(regs1),
+	//.sp(regsp)
 	////////////////////////////////////////////////
 );
 assign wCEqual = wCreg1 == wCreg2;
@@ -147,24 +143,24 @@ always @(posedge clock or posedge reset)
 		end
 	else
 		begin
-			idex <= {wCRegWrite, wCMemtoReg, wCBranch, wCMemRead, wCMemWrite, wCALUSrc, wCALUOp, wCreg1, wCreg2, wCImm, ifid[31:25], ifid[14:12], ifid[11:7]};
+			idex <= {wCMemtoReg, wCRegWrite, wCMemWrite, wCMemRead, wCBranch, wCALUOp, wCALUSrc, wCreg1, wCreg2, wCImm, ifid[31:25], ifid[14:12], ifid[11:7]};
 		end
 	end
 	
 
 always @(*)
 begin
-	case(idex[113])
+	case(idex[111])
 		1'b0:
-		wCiULA2 <= idex[79:48];
+		wCiULA2 <= idex[78:47];
 		1'b1:
-		wCiULA2 <= idex[47:16];
+		wCiULA2 <= idex[46:15];
 	endcase
 end
 
 ALU ALU0(
 	.iControl(wCALUContr),
-	.iA(idex[111:80]),
+	.iA(idex[110:79]),
 	.iB(wCiULA2),
 	.oResult(wCsaidaULA),
 	.zero(wCzero),
@@ -173,7 +169,7 @@ ALU ALU0(
 
 ALUControl ALUControl(
 	.Funct10(idex[14:5]),
-	.ALUOp(idex[112:111]),
+	.ALUOp(idex[113:112]),
 	.ALUCtrl(wCALUContr)
 );
 
@@ -193,7 +189,7 @@ DataRAM MemData (
 	.address(x_men[68:37]),
 	.clock(clock2),
 	.data(x_men[36:5]),
-	.wren(x_men[69]),
+	.wren(x_men[71]),
 	.rden(x_men[70]),
 	.q(wCsaidaMEM)
 );
@@ -212,7 +208,7 @@ always @(posedge clock or posedge reset)
 
 always @(*)
 begin 
-	case (memwb[69])
+	case (memwb[70])
 	1'b0:
 		wCregdata <= memwb[36:5];
 	1'b1:
