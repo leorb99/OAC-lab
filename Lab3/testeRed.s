@@ -21,25 +21,52 @@ F: .word 0x9A380
 	#lw t2, S				#
 	#lw t3, F				#
 	lw t0, 0(gp)				#
+	nop
+	nop
+	nop
 	lw t1, 4(gp)				#
+	nop
+	nop
+	nop
 	lw t2, 8(gp)				#
+	nop
+	nop
+	nop
 	lw t3, 12(gp)				#
+	nop
+	nop
+	nop
 	#li sp, 0x000103fc			#
 	#########################################
 
 soma: 
 	beq t0, zero, fim
+	nop
 	add t2, t2, t0
 	sub t0, t0, t1
 	jal soma
-	
+	nop
+	nop
+	nop	
 fim:	
 	add t0,t2,zero
+	nop
+	nop
+	nop
 	and t1, t0, sp
 	or t2, t2, sp
+	nop
+	nop
+	nop
 	slt s0, t1, t2
 	add s1, t1, t2
+	nop
+	nop
+	nop
 	add s1, s1, t0
+	nop
+	nop
+	nop	
 	add s1, s1, t3
 
 	sw t2, 8(gp)
