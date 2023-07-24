@@ -143,7 +143,7 @@ PRINTSTR:
 		ret
 CLEAR:
 		li a7, 32
-		li a0, 5500
+		li a0, 500
 		ecall
 		li t1,0xFF000000		# endereco inicial da Memoria VGA - Frame 0
 		li t2,0xFF0035C0		# endereco final 

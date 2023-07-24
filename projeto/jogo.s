@@ -15,8 +15,8 @@ Mapa.offset: 	.word 0	# Entre 0 e 192
 	
 .include "sprites/Mario.s"
 
-Mario.size: 	.byte 0		# 0 --> Normal; 1 --> Grande
-Mario.dir: 	.byte 0		# 0 --> Direita; 1 --> Esquerda
+Mario.size: 	.word 0		# 0 --> Normal; 1 --> Grande
+Mario.dir: 	.word 0		# 0 --> Direita; 1 --> Esquerda
 Mario.Velx:	.word 0
 Mario.Vely: 	.word 0	# Velocidade vertical 
 Mario.pos: 	.word 96, 192	# ( X , Y )
@@ -26,7 +26,39 @@ Mario.animado:	.byte 0 	# 0: parado; 1-3: andando; 4: pulando
 	
 .text
 	jal STORY
+	la s5, NOTES
+	lw s6, LEN_MUSIC
+	mv s11, a0 
+	mv s10, a7
+	mv s9, a1
+	mv s8, a2
+	mv s7, a3
+	
+	li a2,68		# define o instrumento
+	li a3,127		# define o volume
+	
+TOCA:		
+	beqz s6,FIM
+	lw a0,0(s5)		# le o valor da nota
+	lw a1,4(s5)		# le a duracao da nota
+	li a7,31		# define a chamada de syscall
+	ecall			# toca a nota
+	mv a0, a1
+	li a7,32		# define a chamada de syscal 
+	ecall			# realiza uma pausa de a0 ms
+	addi s5,s5,8		# incrementa para o endere�o da pr�xima nota
+	addi s6,s6,-1		# incrementa o contador de notas
+	j TOCA
+	
+	
+FIM:		
+	mv a0, s11 
+	mv a7, s10
+	mv a1, s9
+	mv a2, s8
+	mv a3, s7
 
+	
 init:				# Reseta todos os dados
 	la t0, Mapa.offset 
 	lw zero, 0(t0)
@@ -78,4 +110,4 @@ fim:	j	fim
 .include	"./funcoes/PrintMapa.s"
 .include	"./funcoes/Print.s"
 .include	"./funcoes/PrintMario.s"
-
+.include 	"midi.s"
