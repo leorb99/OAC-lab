@@ -92,10 +92,10 @@ LOOP:
 	lw a0,0(s5)		# le o valor da nota
 	lw a1,4(s5)		# le a duracao da nota
 	li a7,31		# define a chamada de syscall
-	ecall			# toca a nota
+	#ecall			# toca a nota
 	mv a0, a1
 	li a7,32		# define a chamada de syscal 
-	ecall			# realiza uma pausa de a0 ms
+	#ecall			# realiza uma pausa de a0 ms
 	addi s5,s5,8		# incrementa para o endere�o da pr�xima nota
 	addi s6,s6,-1		# incrementa o contador de notas
 	
