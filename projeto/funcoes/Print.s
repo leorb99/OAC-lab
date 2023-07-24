@@ -7,6 +7,11 @@
 
 Print:
 	# pos do tile
+	addi sp, sp, -16
+	sw a0, 0(sp)
+	sw a1, 4(sp)
+	sw a2, 8(sp)
+	sw a3, 12(sp)
 	
 	li t0 , 0xFF0 			# carrega 0x FF0 em t0
 	add t0 , t0 , a3 		# adiciona o frame a FF0
@@ -24,10 +29,14 @@ Print:
 	lw t4 , 4( t6) 			# carrega a altura em t4
 	addi t6 , t6 , 8 		# primeira cor em t6
 	
+	li a2, 320
 PrintLinha :
+	bgeu a1, a2, printforaBMP	# checa se está dentro do bitmap
 	lbu t5 , 0( t6) 		# carrega em t5 um byte da imagem
 	sb t5 , 0( t0) 			# imprime no bitmap o byte da imagem
 	
+printforaBMP:
+	addi a1, a1, 1	
 	addi t0 , t0 , 1 		# incrementa endereco do bitmap
 	addi t6 , t6 , 1 		# incrementa endereco da imagem
 	addi t2 , t2 , 1 		# incrementa contador de coluna
@@ -37,11 +46,17 @@ PrintLinha :
 	addi t0 , t0 , 320 		# t0 += largura do bitmap
 	sub t0 , t0 , t3 		# t0 -= largura da imagem
 	
+	sub a1, a1, t2
 	mv t2 , zero 			# zera t2 ( cont de coluna )
 	addi t1 , t1 , 1 		# incrementa contador de linha
 	
 	bgt t4 , t1 , PrintLinha 	# altura > contador de linha ?
 	
+	lw a0, 0(sp)
+	lw a1, 4(sp)
+	lw a2, 8(sp)
+	lw a3, 12(sp)
 	
+	addi sp, sp, 16
 	ret 				# retorna
 	

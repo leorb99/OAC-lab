@@ -12,8 +12,11 @@ PrintMapa:
 	la a0, mapa1Colisao
 	lw a4, 0(a0)	# Largura do mapa de colisão
 	addi a0, a0, 8	# Inicio do mapa de colisão
-
-	#div a5, a1, t0
+	
+	li t0, 16
+	rem a5, a1, t0
+	sub a5, zero, a5
+	div a1, a1, t0
 	
 	add a0, a0, a1	# inicio do print mapa
 	
@@ -27,6 +30,7 @@ mapa.looplinha:
 	
 	
 	slli a1, a1, 4	# Calcula x_offset
+	add a1, a1, a5
 	slli a2, a2, 4	# Calcula y_offset
 		
 	li t3, 1
@@ -109,11 +113,11 @@ mapa.bandeiraL: # imprimir bandeira esq
 	
 
 mapa.fimlinha:
-
+	sub a1, a1, a5
 	srli a1, a1, 4
 	srli a2, a2, 4
 		
-	li t3, 19
+	li t3, 20
 	addi a7, a7, 1
 	ble t3, a1, mapa.proxColuna
 	
@@ -127,7 +131,7 @@ mapa.proxColuna:
 	li t3, 14
 	ble t3, a2, mapa.fim
 	
-	addi a7, a7, -19
+	addi a7, a7, -20
 	li, a1, 0
 	add a7, a7, a4
 	addi a2, a2, 1
@@ -139,6 +143,7 @@ mapa.fim:
 	lw ra, 0(sp)
 	lw a1, 4(sp)
 	lw a3, 8(sp)
+	
 	addi sp, sp, 12
 	
 gfim:	#j gfim
