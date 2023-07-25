@@ -1,5 +1,5 @@
 Restore Archived Project report for TopDE
-Wed Jul 19 17:09:26 2023
+Sat Jul 22 13:38:36 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Wed Jul 19 17:09:26 2023 ;
+; Restore Archived Project Status ; Successful - Sat Jul 22 13:38:36 2023 ;
 ; Revision Name                   ; TopDE                                 ;
 ; Top-level Entity Name           ; Uniciclo                              ;
 ; Family                          ; Cyclone V                             ;
@@ -50,15 +50,24 @@ https://fpgasoftware.intel.com/eula.
 Info: Successfully restored '/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red.qar' into the '/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/' directory
 Info: Generated report 'TopDE.restore.rpt'
 Info (23030): Evaluation of Tcl script /home/leorb/intelFPGA_lite/21.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 595 megabytes
-    Info: Processing ended: Wed Jul 19 17:09:26 2023
-    Info: Elapsed time: 00:00:03
+Info: Quartus Prime Shell was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 601 megabytes
+    Info: Processing ended: Sat Jul 22 13:38:36 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
++------------------------+
+; Files Restored         ;
++------------------------+
+; File Name              ;
++------------------------+
+; output_files/TopDE.vwf ;
++------------------------+
+
+
 +-------------------------------+
-; Files Restored                ;
+; Files Not Restored            ;
 +-------------------------------+
 ; File Name                     ;
 +-------------------------------+
@@ -91,12 +100,5 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; fdiv.v                        ;
 ; output_files/Waveform.vwf     ;
 +-------------------------------+
-
-
-+--------------------+
-; Files Not Restored ;
-+--------------------+
-; File Name          ;
-+--------------------+
 
 

@@ -9,7 +9,7 @@ module Registers (
     input wire  [31:0] 	WriteData,
     output wire [31:0] 	ReadData1, ReadData2,
 	 ///////////////////////////////////////////
-	 output wire [31:0] t0, t1, t2, s0, s1, sp,
+	 output wire [31:0] t0, t1, t2, s0, s1,
 	 ///////////////////////////////////////////
 	 input wire	[4:0]		Rin,
 	 output wire [31:0]	Rout
@@ -31,7 +31,6 @@ initial
 		registers[GPR] = BEGINNING_DATA;
 	end
 //////////////////////////////////////////////////////////
-assign sp = registers[5'b00010];
 assign t0 = registers[5'b00101];
 assign t1 = registers[5'b00110];
 assign t2 = registers[5'b00111];

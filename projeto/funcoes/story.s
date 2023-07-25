@@ -1,6 +1,9 @@
 
 .data
 
+#.include "sprites/mario1.s"
+#.include "sprites/peach1.s"
+
 msg1: .string "Depois do grande sucesso do filme do"
 msg2: .string "Mario, o encanador bigodudo passou a" 
 msg3: .string "frequentar Hollywood e fazer novos"
@@ -134,21 +137,22 @@ STORY:
 		ret
 
 PRINTSTR: 	
+		li a1, 5
 		li a7, 104
 		ecall
 		addi a2, a2, 10
 		ret
 CLEAR:
 		li a7, 32
-		li a0, 3500
+		li a0, 5500
 		ecall
 		li t1,0xFF000000		# endereco inicial da Memoria VGA - Frame 0
 		li t2,0xFF0035C0		# endereco final 
 		li t3,0xFFFFFFFF		# cor branco|branco|branco|branco
 LOOP_CLEAR: 		
-		sw t3,0(t1)			# escreve a word na mem?ria VGA
-		addi t1,t1,4			# soma 4 ao endere?o
-		bne t1,t2,LOOP_CLEAR		# Se for o ?ltimo endere?o ent?o sai do loop
+		sw t3,0(t1)			# escreve a word na mem�ria VGA
+		addi t1,t1,4			# soma 4 ao endere�o
+		bne t1,t2,LOOP_CLEAR		# Se for o �ltimo endere�o ent�o sai do loop
 		li a1, 5
 		li a2, 5
 		ret
@@ -208,3 +212,4 @@ PRINT_LINHA:
 				
 #.include "SYSTEMv21.s"
 #.include "midi.s"
+

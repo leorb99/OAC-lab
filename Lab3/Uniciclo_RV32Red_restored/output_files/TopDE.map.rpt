@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopDE
-Sat Jul  8 20:33:38 2023
+Sat Jul 22 15:15:14 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Jul  8 20:33:38 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sat Jul 22 15:15:14 2023       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; TopDE                                       ;
 ; Top-level Entity Name           ; Uniciclo                                    ;
@@ -708,7 +708,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat Jul  8 20:32:59 2023
+    Info: Processing started: Sat Jul 22 15:14:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopDE -c TopDE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -799,8 +799,8 @@ Info (12128): Elaborating entity "altsyncram_okp1" for hierarchy "InstRAM:MemIns
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u0h2.tdf
     Info (12023): Found entity 1: altsyncram_u0h2 File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/db/altsyncram_u0h2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_u0h2" for hierarchy "InstRAM:MemInstr|altsyncram:altsyncram_component|altsyncram_okp1:auto_generated|altsyncram_u0h2:altsyncram1" File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/db/altsyncram_okp1.tdf Line: 37
-Warning (113028): 16366 out of 16384 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/de1_text.mif Line: 1
-    Warning (113027): Addresses ranging from 18 to 16383 are not initialized File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/de1_text.mif Line: 1
+Warning (113028): 16342 out of 16384 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/de1_text.mif Line: 1
+    Warning (113027): Addresses ranging from 42 to 16383 are not initialized File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/de1_text.mif Line: 1
 Critical Warning (127004): Memory depth (1024) in the design file differs from memory depth (16384) in the Memory Initialization File "/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/de1_text.mif" -- truncated remaining initial content value to fit RAM File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/InstRAM.v Line: 86
 Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "InstRAM:MemInstr|altsyncram:altsyncram_component|altsyncram_okp1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/db/altsyncram_okp1.tdf Line: 38
 Info (12130): Elaborated megafunction instantiation "InstRAM:MemInstr|altsyncram:altsyncram_component|altsyncram_okp1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/db/altsyncram_okp1.tdf Line: 38
@@ -866,7 +866,7 @@ Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "DataRAM:MemData|alt
 Warning (12010): Port "byteena_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 1. The formal width of the signal in the module is 4.  The extra bits will be driven by GND. File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/DataRAM.v Line: 86
 Warning (12010): Port "byteena_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 1. The formal width of the signal in the module is 4.  The extra bits will be driven by GND. File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab3/Uniciclo_RV32Red_restored/InstRAM.v Line: 86
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.07.08.20:33:19 Progress: Loading sldbdf28158/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.07.22.15:14:55 Progress: Loading sldbdf28158/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -902,10 +902,10 @@ Info (21057): Implemented 2983 device resources after synthesis - the final reso
     Info (21061): Implemented 2682 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 527 megabytes
-    Info: Processing ended: Sat Jul  8 20:33:38 2023
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:01:07
+    Info: Peak virtual memory: 533 megabytes
+    Info: Processing ended: Sat Jul 22 15:15:14 2023
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:01:09
 
 
 +------------------------------------------+

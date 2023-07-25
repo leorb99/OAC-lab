@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Jul 20 20:07:26 2023
+Analysis & Synthesis Status : Successful - Sat Jul 22 15:04:50 2023
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : TopDE
 Top-level Entity Name : Uniciclo
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 408
-Total pins : 104
+Total pins : 264
 Total virtual pins : 0
 Total block memory bits : 65,536
 Total DSP Blocks : 0

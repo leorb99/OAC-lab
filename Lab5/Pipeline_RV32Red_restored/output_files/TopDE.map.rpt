@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopDE
-Thu Jul 20 20:07:26 2023
+Sat Jul 22 15:04:50 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -29,13 +29,12 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  21. altsyncram Parameter Settings by Entity Instance
  22. Port Connectivity Checks: "DataRAM:MemData"
  23. Port Connectivity Checks: "ALU:ALU0"
- 24. Port Connectivity Checks: "Registers:reg0"
- 25. Port Connectivity Checks: "InstRAM:MemInstr"
- 26. In-System Memory Content Editor Settings
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
- 30. Analysis & Synthesis Suppressed Messages
+ 24. Port Connectivity Checks: "InstRAM:MemInstr"
+ 25. In-System Memory Content Editor Settings
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -62,14 +61,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Jul 20 20:07:26 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sat Jul 22 15:04:50 2023       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; TopDE                                       ;
 ; Top-level Entity Name           ; Uniciclo                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 408                                         ;
-; Total pins                      ; 104                                         ;
+; Total pins                      ; 264                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 65,536                                      ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -248,7 +247,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Dedicated logic registers                   ; 408                      ;
 ;                                             ;                          ;
-; I/O pins                                    ; 104                      ;
+; I/O pins                                    ; 264                      ;
 ; Total MLAB memory bits                      ; 0                        ;
 ; Total block memory bits                     ; 65536                    ;
 ;                                             ;                          ;
@@ -256,8 +255,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 338                      ;
-; Total fan-out                               ; 4865                     ;
-; Average fan-out                             ; 4.67                     ;
+; Total fan-out                               ; 5025                     ;
+; Average fan-out                             ; 3.69                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -266,7 +265,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                  ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |Uniciclo                                                                                                                               ; 352 (58)            ; 408 (133)                 ; 65536             ; 0          ; 104  ; 0            ; |Uniciclo                                                                                                                                                                                                                                                                                                                                            ; Uniciclo                          ; work         ;
+; |Uniciclo                                                                                                                               ; 352 (58)            ; 408 (133)                 ; 65536             ; 0          ; 264  ; 0            ; |Uniciclo                                                                                                                                                                                                                                                                                                                                            ; Uniciclo                          ; work         ;
 ;    |ALU:ALU0|                                                                                                                           ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Uniciclo|ALU:ALU0                                                                                                                                                                                                                                                                                                                                   ; ALU                               ; work         ;
 ;    |ALUControl:ALUControl|                                                                                                              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Uniciclo|ALUControl:ALUControl                                                                                                                                                                                                                                                                                                                      ; ALUControl                        ; work         ;
 ;    |Control:Ctrl0|                                                                                                                      ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Uniciclo|Control:Ctrl0                                                                                                                                                                                                                                                                                                                              ; Control                           ; work         ;
@@ -2231,20 +2230,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Registers:reg0"                                                                                          ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; t0   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; t1   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; t2   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; s0   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; s1   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; sp   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "InstRAM:MemInstr"                                                                                                                                                                     ;
 +---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2295,7 +2280,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 30                          ;
 ;         5 data inputs ; 36                          ;
 ;         6 data inputs ; 35                          ;
-; boundary_port         ; 158                         ;
+; boundary_port         ; 318                         ;
 ; stratixv_ram_block    ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.20                        ;
@@ -2318,7 +2303,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Jul 20 20:06:52 2023
+    Info: Processing started: Sat Jul 22 15:04:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopDE -c TopDE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2376,8 +2361,8 @@ Info (12128): Elaborating entity "altsyncram_okp1" for hierarchy "InstRAM:MemIns
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u0h2.tdf
     Info (12023): Found entity 1: altsyncram_u0h2 File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/db/altsyncram_u0h2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_u0h2" for hierarchy "InstRAM:MemInstr|altsyncram:altsyncram_component|altsyncram_okp1:auto_generated|altsyncram_u0h2:altsyncram1" File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/db/altsyncram_okp1.tdf Line: 37
-Warning (113028): 16349 out of 16384 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/de1_text.mif Line: 1
-    Warning (113027): Addresses ranging from 35 to 16383 are not initialized File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/de1_text.mif Line: 1
+Warning (113028): 16342 out of 16384 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/de1_text.mif Line: 1
+    Warning (113027): Addresses ranging from 42 to 16383 are not initialized File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/de1_text.mif Line: 1
 Critical Warning (127004): Memory depth (1024) in the design file differs from memory depth (16384) in the Memory Initialization File "/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/de1_text.mif" -- truncated remaining initial content value to fit RAM File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/InstRAM.v Line: 86
 Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "InstRAM:MemInstr|altsyncram:altsyncram_component|altsyncram_okp1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/db/altsyncram_okp1.tdf Line: 38
 Info (12130): Elaborated megafunction instantiation "InstRAM:MemInstr|altsyncram:altsyncram_component|altsyncram_okp1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/db/altsyncram_okp1.tdf Line: 38
@@ -2443,7 +2428,7 @@ Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "DataRAM:MemData|alt
 Warning (12010): Port "byteena_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 1. The formal width of the signal in the module is 4.  The extra bits will be driven by GND. File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/DataRAM.v Line: 87
 Warning (12010): Port "byteena_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 1. The formal width of the signal in the module is 4.  The extra bits will be driven by GND. File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/InstRAM.v Line: 86
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.07.20.20:07:11 Progress: Loading sldbdf28158/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.07.22.15:04:35 Progress: Loading sldbdf28158/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -2466,46 +2451,206 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/db/ip/sldbdf28158/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldbdf28158/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/db/ip/sldbdf28158/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13012): Latch Control:Ctrl0|Jal has unsafe behavior File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Control.v Line: 15
     Warning (13013): Ports D and ENA on the latch are fed by the same signal ifid[3] File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 90
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "regout[0]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[1]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[10]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[11]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[12]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[13]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[14]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[15]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[17]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[18]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[19]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[20]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[21]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[22]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[23]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[24]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[25]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[26]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[27]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[29]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[30]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
-    Warning (13410): Pin "regout[31]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regout[0]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[1]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[10]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[11]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[12]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[13]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[14]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[15]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[17]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[18]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[19]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[20]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[21]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[22]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[23]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[24]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[25]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[26]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[27]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[29]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[30]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regout[31]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 12
+    Warning (13410): Pin "regt0[0]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[1]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[2]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[3]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[4]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[5]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[6]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[7]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[8]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[9]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[10]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[11]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[12]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[13]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[14]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[15]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[16]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[17]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[18]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[19]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[20]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[21]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[22]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[23]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[24]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[25]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[26]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[27]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[28]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[29]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[30]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt0[31]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[0]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[1]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[2]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[3]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[4]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[5]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[6]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[7]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[8]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[9]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[10]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[11]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[12]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[13]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[14]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[15]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[16]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[17]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[18]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[19]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[20]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[21]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[22]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[23]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[24]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[25]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[26]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[27]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[28]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[29]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[30]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt1[31]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[0]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[1]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[2]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[3]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[4]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[5]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[6]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[7]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[8]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[9]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[10]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[11]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[12]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[13]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[14]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[15]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[16]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[17]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[18]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[19]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[20]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[21]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[22]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[23]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[24]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[25]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[26]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[27]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[28]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[29]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[30]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regt2[31]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[0]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[1]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[2]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[3]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[4]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[5]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[6]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[7]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[8]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[9]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[10]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[11]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[12]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[13]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[14]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[15]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[16]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[17]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[18]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[19]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[20]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[21]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[22]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[23]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[24]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[25]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[26]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[27]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[28]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[29]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[30]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs0[31]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 14
+    Warning (13410): Pin "regs1[0]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[1]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[2]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[3]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[4]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[5]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[6]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[7]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[8]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[9]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[10]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[11]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[12]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[13]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[14]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[15]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[16]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[17]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[18]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[19]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[20]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[21]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[22]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[23]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[24]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[25]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[26]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[27]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[28]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[29]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[30]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
+    Warning (13410): Pin "regs1[31]" is stuck at GND File: /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/Uniciclo.v Line: 16
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 77 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file /home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/output_files/TopDE.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 763 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 923 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 97 output pins
+    Info (21059): Implemented 257 output pins
     Info (21061): Implemented 590 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 533 megabytes
-    Info: Processing ended: Thu Jul 20 20:07:26 2023
-    Info: Elapsed time: 00:00:34
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 198 warnings
+    Info: Peak virtual memory: 529 megabytes
+    Info: Processing ended: Sat Jul 22 15:04:50 2023
+    Info: Elapsed time: 00:00:36
     Info: Total CPU time (on all processors): 00:01:06
 
 

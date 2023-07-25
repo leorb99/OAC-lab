@@ -1,48 +1,48 @@
 #.include "../MACROSv21.s"
 
 .data
-msg1: .string "Depois do grande sucesso do filme do   "
-msg2: .string "Mario, o encanador bigodudo passou a    " 
-msg3: .string "frequentar Hollywood e fazer novos      "
+msg1: .string "Depois do grande sucesso do filme do"
+msg2: .string "Mario, o encanador bigodudo passou a" 
+msg3: .string "frequentar Hollywood e fazer novos"
 msg4: .string "amigos."
 
 #PASSA PARA OUTRA TELA
 
-msg5: .string "Pediam autografos, recebia propostas    "
-msg6: .string "para uma continuacao e era amado e      "
-msg7: .string "reconhecido por todo mundo. "
+msg5: .string "Pediam autografos, recebia propostas"
+msg6: .string "para uma continuacao e era amado e"
+msg7: .string "reconhecido por todo mundo."
 
 # PASSA PARA OUTRA TELA
 
-msg8: .string "Porem a Princesa Peach percebeu que nao\n"
-msg9: .string "estava mais recebendo a atencao devida. "
+msg8: .string "Porem a Princesa Peach percebeu que nao"
+msg9: .string "estava mais recebendo a atencao devida."
 
 # PASSA PARA OUTRA TELA
 
-msg10: .string "Podemos conversar? "			#PEACH
+msg10: .string "Podemos conversar?"			#PEACH
 
-msg11: .string "Claro, mas seja rapida,  tenho que "		#MARIO
+msg11: .string "Claro, mas seja rapida,  tenho que"		#MARIO
 msg12: .string "encontrar o The Rock em um evento"
 
-msg13: .string "Voce tem sempre um compromisso, ne\n"		#PEACH
-msg14: .string "e nunca eh comigo ou com o Reino do\n"
+msg13: .string "Voce tem sempre um compromisso, ne"		#PEACH
+msg14: .string "e nunca eh comigo ou com o Reino do"
 msg15: .string "Cogumelo"
 
-msg16: .string "Desculpa, Peach, mas voce sabe como eh,\n"	#MARIO
+msg16: .string "Desculpa, Peach, mas voce sabe como eh,"	#MARIO
 msg17: .string "eu tenho outros compromissos agora"
 
-msg18: .string "Entao se eh assim, talvez eu tenha que\n"		#PEACH
+msg18: .string "Entao se eh assim, talvez eu tenha que"		#PEACH
 msg19: .string "encontrar outra coisa pra fazer"
 
 msg20: .string "Peach da as costas e sai"
 
-msg21: .string "Mario desesperado tenta impedi-la,       mas\n"
+msg21: .string "Mario desesperado tenta impedi-la, mas"
 msg22: .string "nao consegue"
 
-msg23: .string "Dias depois, Mario ainda nao conseguiu\n"
-msg24: .string "convencer a Princesa Peach a voltar,         \n"
-msg25: .string "   entao ele decide ir mais uma vez tentar   \n"
-msg26: .string "    reconquista-la"
+msg23: .string "Dias depois, Mario ainda nao conseguiu"
+msg24: .string "convencer a Princesa Peach a voltar,"
+msg25: .string "entao ele decide ir mais uma vez tentar"
+msg26: .string "reconquista-la"
 
 .text
 
@@ -270,7 +270,7 @@ dialogo.PRINTSTR:
 dialogo.READ_CHAR:	
 		csrr t4, 3073
 		li t0, 110			# ascii do 'n'
-	 	li t1,0xFF200000		# carrega o endereço de controle do KDMMIO
+	 	li t1,0xFF200000		# carrega o endereï¿½o de controle do KDMMIO
 	 	
 dialogo.LOOP: 	li t3, 20000
 		csrr t5, 3073
@@ -279,7 +279,7 @@ dialogo.LOOP: 	li t3, 20000
 		
 		lw t2,0(t1)			# Le bit de Controle Teclado
 	   	andi t2,t2,0x0001		# mascara o bit menos significativo
-	   	beq t2,zero,dialogo.LOOP	# não tem tecla pressionada então volta ao loop
+	   	beq t2,zero,dialogo.LOOP	# nï¿½o tem tecla pressionada entï¿½o volta ao loop
 	   	lw t3,4(t1)			# le o valor da tecla
 		bne t3, t0, dialogo.LOOP
 dialogo.LOOPFIM:

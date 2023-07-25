@@ -1,5 +1,5 @@
 Archive Project report for TopDE
-Thu Jul 20 20:11:15 2023
+Sat Jul 22 15:12:09 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Thu Jul 20 20:11:15 2023 ;
+; Archive Project Status ; Successful - Sat Jul 22 15:12:09 2023 ;
 ; Revision Name          ; TopDE                                 ;
 ; Top-level Entity Name  ; Uniciclo                              ;
 ; Family                 ; Cyclone V                             ;
@@ -60,8 +60,8 @@ Info: ----------------------------------------------------------
 Info: Generated report 'TopDE.archive.rpt'
 Info (23030): Evaluation of Tcl script /home/leorb/intelFPGA_lite/21.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 601 megabytes
-    Info: Processing ended: Thu Jul 20 20:11:15 2023
+    Info: Peak virtual memory: 596 megabytes
+    Info: Processing ended: Sat Jul 22 15:12:09 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

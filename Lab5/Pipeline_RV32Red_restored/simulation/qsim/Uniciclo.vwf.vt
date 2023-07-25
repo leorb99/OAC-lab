@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/20/2023 20:03:58"
+// Generated on "07/22/2023 15:05:48"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          Uniciclo
 // 
@@ -37,18 +37,12 @@ reg reset;
 // wires                                               
 wire [31:0] Instr;
 wire [31:0] PC;
-wire [118:0] idex;
-wire [63:0] ifid;
-wire [70:0] memwb;
 wire [31:0] regout;
 wire [31:0] regs0;
 wire [31:0] regs1;
-wire [31:0] regsp;
 wire [31:0] regt0;
 wire [31:0] regt1;
 wire [31:0] regt2;
-wire [31:0] wCsaidaMEM;
-wire [73:0] x_men;
 
 // assign statements (if any)                          
 Uniciclo i1 (
@@ -57,24 +51,18 @@ Uniciclo i1 (
 	.PC(PC),
 	.clock(clock),
 	.clock2(clock2),
-	.idex(idex),
-	.ifid(ifid),
-	.memwb(memwb),
 	.regin(regin),
 	.regout(regout),
 	.regs0(regs0),
 	.regs1(regs1),
-	.regsp(regsp),
 	.regt0(regt0),
 	.regt1(regt1),
 	.regt2(regt2),
-	.reset(reset),
-	.wCsaidaMEM(wCsaidaMEM),
-	.x_men(x_men)
+	.reset(reset)
 );
 initial 
 begin 
-#40000000 $finish;
+#4000000 $finish;
 end 
 
 // clock
@@ -95,27 +83,27 @@ end
 // regin[ 4 ]
 initial
 begin
-	regin[4] = 1'bX;
+	regin[4] = 1'b0;
 end 
 // regin[ 3 ]
 initial
 begin
-	regin[3] = 1'bX;
+	regin[3] = 1'b0;
 end 
 // regin[ 2 ]
 initial
 begin
-	regin[2] = 1'bX;
+	regin[2] = 1'b0;
 end 
 // regin[ 1 ]
 initial
 begin
-	regin[1] = 1'bX;
+	regin[1] = 1'b0;
 end 
 // regin[ 0 ]
 initial
 begin
-	regin[0] = 1'bX;
+	regin[0] = 1'b0;
 end 
 
 // reset

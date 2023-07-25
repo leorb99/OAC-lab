@@ -1,8 +1,8 @@
 inTeclado:
-	li t1,0xff200000		# carrega o endereço de controle do KDMMIO
+	li t1,0xff200000		# carrega o endereï¿½o de controle do KDMMIO
  	lw t0,0(t1)			# Le bit de Controle Teclado
    	andi t0,t0, 1			# mascara o bit menos significativo
-   	ble t0,zero,input.fim		# não tem tecla pressionada então sai da função
+   	ble t0,zero,input.fim		# nï¿½o tem tecla pressionada entï¿½o sai da funï¿½ï¿½o
    	lw t2,4(t1)			# le o valor da tecla
    	
    	li t1, 97			# tecla apertada: "a"
@@ -56,7 +56,6 @@ inputa.anim.cont:
 	
 	j input.fim
 input.s:
-
 	j input.fim
 input.d:
 	la t0, Mario.dir

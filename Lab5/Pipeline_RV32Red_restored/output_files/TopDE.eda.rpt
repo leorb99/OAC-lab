@@ -1,5 +1,5 @@
 EDA Netlist Writer report for TopDE
-Thu Jul 20 20:04:01 2023
+Sat Jul 22 15:05:50 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Jul 20 20:04:01 2023 ;
+; EDA Netlist Writer Status ; Successful - Sat Jul 22 15:05:50 2023 ;
 ; Revision Name             ; TopDE                                 ;
 ; Top-level Entity Name     ; Uniciclo                              ;
 ; Family                    ; Cyclone V                             ;
@@ -95,15 +95,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jul 20 20:03:59 2023
+    Info: Processing started: Sat Jul 22 15:05:49 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/simulation/qsim/ TopDE -c TopDE
 Info (119006): Selected device 5CSEMA5F31C6 for design "TopDE"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file TopDE.vo in folder "/home/leorb/UnB/5º_semestre/OAC/OAC-lab/Lab5/Pipeline_RV32Red_restored/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 705 megabytes
-    Info: Processing ended: Thu Jul 20 20:04:01 2023
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 699 megabytes
+    Info: Processing ended: Sat Jul 22 15:05:50 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -9,9 +9,9 @@ module Uniciclo (
 	output reg [31:0] PC,
 	output reg [31:0] Instr,
 	input wire[4:0] regin,
-	output reg [31:0] regout
+	output reg [31:0] regout,
 	///////////////////////////////////
-	//output wire [31:0] regt0, regt1, regt2, regs0, regs1, regsp, wCsaidaMEM,
+	output wire [31:0] regt0, regt1, regt2, regs0, regs1 //regsp, wCsaidaMEM,
 	///////////////////////////////////
 	);
 initial
@@ -103,13 +103,13 @@ Registers reg0(
 	.ReadData1(wCreg1), 
 	.ReadData2(wCreg2),
 	.Rin(regin),
-	.Rout(regout)
+	.Rout(regout),
 	////////////////////////////////////////////////
-	//.t0(regt0),
-	//.t1(regt1),
-	//.t2(regt2),
-	//.s0(regs0),
-	//.s1(regs1),
+	.t0(regt0),
+	.t1(regt1),
+	.t2(regt2),
+	.s0(regs0),
+	.s1(regs1)
 	//.sp(regsp)
 	////////////////////////////////////////////////
 );
